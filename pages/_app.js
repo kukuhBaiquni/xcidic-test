@@ -1,7 +1,7 @@
 import React, { useEffect, Fragment } from 'react'
 import PropTypes from 'prop-types'
-import { ThemeProvider } from '@material-ui/core/styles'
-import CssBaseline from '@material-ui/core/CssBaseline'
+import { ThemeProvider } from '@mui/material/styles'
+import CssBaseline from '@mui/material/CssBaseline'
 // import theme from '../theme'
 
 export default function MyApp(props) {
