@@ -2,7 +2,7 @@ import React, { useEffect, Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
-// import theme from '../theme'
+import theme from '../theme'
 
 export default function MyApp(props) {
   const { Component, pageProps } = props
@@ -16,10 +16,10 @@ export default function MyApp(props) {
 
   return (
     <Fragment>
-      {/* <ThemeProvider theme={theme}> */}
-      <CssBaseline />
-      <Component {...pageProps} />
-      {/* </ThemeProvider> */}
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </Fragment>
   )
 }
