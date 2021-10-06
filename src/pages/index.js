@@ -25,7 +25,7 @@ export default function Home() {
         >
           <div
             css={css`
-              max-width: 1100px;
+              max-width: 1080px;
               margin-left: auto;
               margin-right: auto;
               padding: 38px 10px;

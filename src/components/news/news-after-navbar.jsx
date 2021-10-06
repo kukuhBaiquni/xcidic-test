@@ -11,12 +11,16 @@ export default function NewsAfterNavbar() {
     <Grid
       columns={15}
       container
-      spacing={2}
-      sx={{ mt: 1 }}
+      spacing={3}
+      sx={{ mt: 0.5 }}
     >
       {newsList.map((item) => (
         <Grid item key={item.title} xs={3}>
-          <Card css={css`box-shadow: none;`}>
+          <Card css={css`
+            box-shadow: none;
+            cursor: pointer;
+          `}
+          >
             <CardMedia
               alt='News Image'
               component='img'
@@ -40,6 +44,10 @@ export default function NewsAfterNavbar() {
                 font-weight: 700;
                 margin-top: 10px;
                 letter-spacing: 1px;
+                &:hover {
+                  transition: 0.4s;
+                  color: ${theme.palette.primary.main}
+                }
               `}
               variant='body2'
             >
