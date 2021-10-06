@@ -12,34 +12,42 @@ export default function Navbar() {
         margin-top: 24px;
         background: linear-gradient(to right, #21409a 50%, #007cbd 100%);
         border-radius: 3px;
-      `}
+        `}
     >
       <ul
         css={css`
           list-style: none;
           padding: 0;
+          margin-block-end: 8px;
           display: flex;
           align-items: center;
           li {
             padding: 10px 10px;
+            a {
+              text-decoration-line: none;
+            }
           }
         `}
       >
         {menuList.map((item, index) => (
           <li key={index}>
-            <Typography
-              css={css`
-              font-weight: 700;
-              color: ${theme.palette.common.white};
-              transition: 0.4s;
-              &:hover {
-                color: ${theme.palette.linkHover.main};
-              };
-            `}
-              variant='body1'
-            >
-              {item}
-            </Typography>
+            <Link href={`/${item}/navigation-example`}>
+              <a>
+                <Typography
+                  css={css`
+                    font-weight: 700;
+                    color: ${theme.palette.common.white};
+                    transition: 0.4s;
+                    &:hover {
+                      color: ${theme.palette.linkHover.main};
+                    };
+                  `}
+                  variant='body1'
+                >
+                  {item}
+                </Typography>
+              </a>
+            </Link>
           </li>
         ))}
       </ul>
