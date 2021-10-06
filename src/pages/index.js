@@ -6,6 +6,7 @@ import LogoBlock from 'components/logo-block'
 import Navbar from 'components/navbar'
 import UncagedNavbar from 'components/navbar/uncaged-navbar'
 import NewsAfterNavbar from 'components/news/news-after-navbar'
+import Sections from 'components/sections'
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
             <Navbar />
             <UncagedNavbar />
             <NewsAfterNavbar />
-            Grandong
+            <Sections />
           </div>
         </main>
       </div>

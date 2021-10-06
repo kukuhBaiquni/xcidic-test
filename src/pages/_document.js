@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           <link href='https://fonts.googleapis.com' rel='preconnect' />
-          <link crossOrigin href='https://fonts.gstatic.com' rel='preconnect' />
+          <link href='https://fonts.gstatic.com' rel='preconnect' />
           <link href='https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap' rel='stylesheet' />
         </Head>
         <body>
