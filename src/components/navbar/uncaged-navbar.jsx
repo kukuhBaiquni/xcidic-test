@@ -63,6 +63,12 @@ function ButtonText(props) {
               transition: 0.4s;
               text-transform: none;
               font-size: 14px;
+              ${color === '#000' && (
+                `&:hover {
+                  transition: 0.4s;
+                  color: ${theme.palette.primary.main}
+                }`
+              )}
             `}
               variant='body1'
             >

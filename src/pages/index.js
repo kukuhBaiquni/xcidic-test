@@ -6,6 +6,7 @@ import LogoBlock from 'components/logo-block'
 import Navbar from 'components/navbar'
 import UncagedNavbar from 'components/navbar/uncaged-navbar'
 import NewsAfterNavbar from 'components/news/news-after-navbar'
+import Sections from 'components/sections'
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
         >
           <div
             css={css`
-              max-width: 1100px;
+              max-width: 1080px;
               margin-left: auto;
               margin-right: auto;
               padding: 38px 10px;
@@ -35,7 +36,7 @@ export default function Home() {
             <Navbar />
             <UncagedNavbar />
             <NewsAfterNavbar />
-            Grandong
+            <Sections />
           </div>
         </main>
       </div>
