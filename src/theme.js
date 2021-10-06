@@ -12,6 +12,9 @@ const theme = createTheme({
     textGeneral: {
       main: '#595959',
     },
+    linkHover: {
+      main: '#fcc43f',
+    },
   },
 })
 
