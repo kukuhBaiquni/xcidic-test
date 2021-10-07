@@ -16,7 +16,6 @@ export default function Sections() {
     >
       <Grid
         css={css`
-          background-color: lime;
         `}
         xs={8}
       >
